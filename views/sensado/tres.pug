@@ -1,0 +1,36 @@
+doctype html
+
+html(lang="en")
+	head
+		title Sensado General
+		meta(http-equiv="refresh" content="30")
+		link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet")
+		link(href="/css/main.css" rel="stylesheet")
+		link(href='https://fonts.googleapis.com/css?family=Acme|Handlee" rel="stylesheet' type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css')
+		link(href='css/animate.css' rel='stylesheet' type='text/css')
+	body
+		nav(class="large-padding bgverdeagua text-center")
+				ul(class="no-list mediano")
+					li(class="pacifico col-md-4 inline-block")
+						a(href='/cuenta/ingresar' class="piel") Menú #[small(class="lato small guindasuave") IPN ]
+					li(class="col-md-4 inline-block")
+						if user
+							///a(class="piel" )= user.id
+					li(class="col-md-4 inline-block")
+						a(href="/" class="piel") INICIO
+		section(class="no-float top-left full-height" id="main-content")
+			h1(class='text-center moradito') Sensor 3
+			if user
+					table(class="table pacifico azulito")
+						thead
+							tr
+								th Sensor						
+								th Valor
+						tbody
+								tr
+									td= user.name
+									td= user.valor
+			else
+				h2(class='lato azulito text-center') Sin Datos!	
+				a(type="button" href='/cuenta/ingresar' class=" mx-auto d-block medium-big btn btn-outline-success" role="button") Regresar

@@ -1,0 +1,20 @@
+extends ./layout.pug
+block contenido
+	body
+		nav(class="large-padding bggris text-center")
+				ul(class="no-list mediano")
+					li(class="pacifico col-md-6 inline-block")
+						a(href="/cuenta/ingresar" class="piel") Ingresar
+					li(class="col-md-6 inline-block")
+						a(href="/" class="piel") Inicio
+	section(class="full-height top-left bgpiel" id="main-content")
+		div(class="data")
+			div(class="center-block no-float left-space")
+				h1()
+				h2(class="pacifico medium guinda") Quienes Somos?
+				p(class="acme medium guindasuave text-center") Estudiantes de  #[medium(class="lato Handlee medium azulito") Escuela Superior Ingenieria Mecanica  Electrica], UNIDAD ZACATENCO. DEl #[big(class="lato medium azulito") Instituto Politecnico Nacional.] 
+				p(class="lato medium guindasuave") Cursamos el 8vo Semestre, de la especilidad de Electronica, en la materia Instrumentacion 2 impartida por el profesor #[medium(class="lato Handlee moradito") M. en C. Juan Manuel Cobil]
+			p(class="Handlee medium azulito") Correo de contacto
+			a(href="mailto:ricsando.rsr@gmail.com") ricsando.rs@gmail.com
+		script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+		script(src="js/main.js")

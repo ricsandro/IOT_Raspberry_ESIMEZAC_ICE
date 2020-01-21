@@ -1,0 +1,20 @@
+extends ./layout.pug
+block contenido
+	body
+		nav(class="large-padding bggris text-center")
+				ul(class="no-list mediano")
+					li(class="pacifico col-md-6 inline-block")
+						a(href="/cuenta/ingresar" class="piel") Ingresar
+					li(class="col-md-6 inline-block")
+						a(href="acerca" class="piel") Acerca de
+	section(class="no-float top-left full-height pacifico medium piel" id="main-content")
+		section(class="full-height text-center" id="main-content")
+			div(class="data")
+				div(class="center-block no-float top-space")
+					<img src="imgs/escudos.png" class="animated fadeIn">
+					h1(class="big guinda animated fadeIn delay-1") INSTRUMENTACION 2. 
+					div(class="animated fadeInDown delay-2")
+						h2(class="Acme medium guindasuave",color:#5C0001) MEDICIONES ONLINE
+				caption By Sandro
+		script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+		script(src="js/main.js")
